@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/inicio-fondo-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+/* --------------------------------- */
+/* ESTILOS DE PÁGINA: INICIO */
+/* --------------------------------- */
+
+#inicio {
+    background-image: url("../images/inicio-fondo-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+/* Estilos del cohete (imagen o video) */
+.img-cohete {
+    max-width: 1200px; 
+    width: 100%; 
+    height: auto;
+}
+
+.img-cohete:hover {
+    animation-iteration-count: 1; 
+    animation-name: tada;
+    animation-duration: 1s;
+}
+
+@media (max-width: 768px) {
+    .img-cohete {
+        max-width: 300px;
+    }
+}
+
+/* --------------------------------- */
+/* ESTILOS DE BIENVENIDA Y BOTÓN */
+/* --------------------------------- */
+
+.texto-bienvenida {
+    color: white; 
+    font-size: 24px; 
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-proyectos {
+    background-color: #E20000;
+    color: white;
+    font-weight: 700;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-proyectos:hover {
+    background-color: #A90000;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .texto-bienvenida {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* --------------------------------- */
+/* ESTILOS GLOBALES */
+/* --------------------------------- */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/contacto-fondo-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    background-color: #0d1a24;
+}
+
+h1 {
+    color: #013453;
+}
+
+p {
+    color: #013453;
+}
+
+.btn {
+    background-color: #aab9b4;
+    color: #013453;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #77949c;
+    color: #f8f3e0;
+    font-weight: 600;
+}
+
+/* --------------------------------- */
+/* ESTILOS DE NAVEGACIÓN (NAVBAR) */
+/* --------------------------------- */
+
+.navbar-brand {
+    font-weight: 700;
+    color: #013453 !important;
+}
+
+.dev {
+    color: #e20000;
+}
+
+nav .nav-link {
+    color: #282828;
+    transition: all 0.3s;
+}
+
+nav .nav-link.active {
+    color: #282828;
+    border: 1px solid #013453;
+    border-radius: 20px;
+    padding: 8px 15px !important;
+}
+
+nav .nav-link:hover {
+    color: #E20000;
+    font-weight: bold;
+}
+
+
+/* --------------------------------- */
+/* ESTILOS DE FOOTER Y WHATSAPP */
+/* --------------------------------- */
+
+footer {
+    color: #cc1010;
+}
+
+footer a {
+    color: #cc1010;
+    text-decoration: none;
+}
+
+footer .fa-github,
+footer .fa-linkedin,
+footer .fa-facebook {
+    color: #cc1010;
+    font-size: 30px;
+    margin: 0 15px;
+}
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25d366;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+}
+
+.btn-whatsapp .fa-whatsapp {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
