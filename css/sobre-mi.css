@@ -13,8 +13,172 @@ body {
     background-position: bottom;
 }
 
+/* --------------------------------- */
+/* ESTILOS ESPECÍFICOS DE LA IMAGEN DE PERFIL */
+/* --------------------------------- */
+
+#descripcion-sobre-mi img {
+    /* Ajusta el tamaño máximo de la imagen en escritorios */
+    max-width: 350px;
+    height: auto;
+    margin-top: 20px; /* Separación del texto de la parte superior */
+    
+    /* Centrado en su contenedor (para cuando está sola) */
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Estilo de sombra mejorado si quieres que resalte más */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 0 5px #E20000; /* Sombra profunda y borde sutil rojo */
+    
+    /* Animación sutil al cargar la página (opcional) */
+    opacity: 1; 
+    transition: opacity 0.5s ease;
+}
+
+/* Media Query para centrar la imagen y reducir el tamaño en móviles */
+@media (max-width: 576px) {
+    #descripcion-sobre-mi img {
+        /* Tamaño más pequeño en móviles */
+        max-width: 250px;
+        margin-top: 30px; 
+        margin-bottom: 30px; /* Separación de la sección del stack */
+    }
+}
+
+/* --------------------------------- */
+/* ESTILOS ESPECÍFICOS DE LA SECCIÓN STACK TECNOLÓGICO */
+/* --------------------------------- */
 
 #stack-tecnologico-sobre-mi {
+    /* Mantenemos el fondo oscuro */
     background-color: #043555;
     color: white;
+    padding: 60px 0; /* Espaciado superior e inferior para destacarla */
+    text-align: center;
+}
+
+#stack-tecnologico-sobre-mi h2 {
+    /* Título llamativo con línea de fondo */
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #E20000; /* Línea de color rojo distintivo */
+    display: inline-block; /* Asegura que la línea se ajuste al ancho del texto */
+}
+
+/* Contenedor de cada ícono de tecnología */
+.tecnologia-sobre-mi {
+    /* Estilos del contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: #0d4b6b; /* Un tono un poco más claro que el fondo para el contraste */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra elegante */
+    
+    /* Transición para el efecto hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tecnologia-sobre-mi:hover {
+    /* Efecto de elevación al pasar el ratón */
+    transform: translateY(-5px) scale(1.05);
+    background-color: #053857; /* Fondo más oscuro al pasar el ratón */
+    cursor: pointer;
+}
+
+.tecnologia-sobre-mi h3 {
+    /* Estilo para el nombre de la tecnología */
+    color: #f8f3e0; /* Color claro para contrastar */
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tecnologia-sobre-mi img {
+    /* Estilo para los iconos/imágenes */
+    width: 60px; /* Tamaño fijo para consistencia */
+    height: 60px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)); /* Pequeño brillo a los iconos */
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.tecnologia-sobre-mi:hover img {
+    opacity: 1;
+}
+
+/* Ajuste para el último div que tiene el número 12 */
+.container .row .col-2:last-child div:not(.tecnologia-sobre-mi) {
+    color: #e20000; /* Color distintivo si quieres que el número 12 resalte */
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 15px;
+}
+
+/* Media Query para asegurar una buena visualización en dispositivos más pequeños */
+@media (max-width: 992px) {
+    /* En tabletas y móviles, hacer que los iconos ocupen más espacio para ser más grandes */
+    #stack-tecnologico-sobre-mi .col-2 {
+        flex: 0 0 33.333333%; /* Tres columnas en lugar de 6 */
+        max-width: 33.333333%;
+    }
+}
+
+@media (max-width: 576px) {
+    /* En móviles pequeños, dos columnas */
+    #stack-tecnologico-sobre-mi .col-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* --------------------------------- */
+/* EXPERIENCIA */
+/* --------------------------------- */
+
+
+#experiencias-sobre-mi h1 {
+    font-size: 24px;
+    color: #043555;
+    font-weight: 400;
+}
+
+#experiencias-sobre-mi h2 {
+    font-size: 24px;
+    color: #043555;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+#experiencias-sobre-mi h3 {
+    font-size: 18px;
+    color: #6a6a6a;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#experiencias-sobre-mi h4 {
+    font-size: 17px;
+    color: #370a6d;
+    margin-bottom: 10px;
+}
+
+#experiencias-sobre-mi h5 {
+    font-size: 14px;
+    color: #6a6a6a;
+    
+    margin-bottom: 15px;
+}
+
+.experiencias-2 {
+    width: 100%;
+    height: auto;
 }

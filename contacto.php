@@ -1,3 +1,8 @@
+<?php 
+$pg="contacto";
+?>
+
+
 <!DOCTYPE html>
 <html lang="es" class="h-100" >
 <head>
@@ -13,40 +18,8 @@
 
 <body id="contacto" class="d-flex flex-column h-100">
     <header class="container">
-        <nav class="navbar navbar-expand-lg my-nav-transparent">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Diego Godoy | <span class="dev">Dev</span> </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="sobre-mi.html">Sobre mí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active shadow" aria-current="page" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <?php include_once 'menu.php'; ?>
     </header>
-
     <main class="container">
         <div class="row">
             <div class="col-12 pt-3 pb-5">
